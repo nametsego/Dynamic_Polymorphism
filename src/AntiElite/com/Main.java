@@ -11,14 +11,17 @@ public class Main {
         Animal animal;
 
         System.out.println("What animal do you want?");
-        System.out.print("(1=Dog) or (2=Cat) : ");
+        System.out.print("(1=Dog) or (2=Cat) or (3=Bird) : ");
         int choice = scanner.nextInt();
 
         if(choice==1){
             animal = new Dog();
             animal.speak();
-        }else if(choice==2){
+        }else if(choice==2) {
             animal = new Cat();
+            animal.speak();
+        }else if(choice==3){
+            animal = new Bird();
             animal.speak();
         }else{
             animal = new Animal();
